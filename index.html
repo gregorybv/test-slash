@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Slach</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="container">
+          <nav class="header__nav">
+            <ul class="header__list">
+              <li class="header__link">
+                <img
+                  class="header__arrow"
+                  src="./img/right.svg"
+                  alt="rightArrow"
+                />
+                <p class="header__back">Back</p>
+              </li>
+              <li class="header__link">
+                <img src="./img/Logo.svg" alt="logoImg" class="header__logo" />
+              </li>
+              <li class="header__link">
+                <button class="header__button">Skip</button>
+              </li>
+            </ul>
+          </nav>
+          <div class="header__title">
+            <img class="header__image" src="./img/Steps.svg" alt="Steps" />
+            <h1 class="header__text">Connect your bank card</h1>
+            <p class="header__subtext">
+              You'll get discounted prices when shopping with Slash using this
+              card. Your data will be stored on secure servers using industry
+              standard encryption and will not be shared with any third party.
+            </p>
+          </div>
+        </div>
+      </header>
+      <main>
+        <section class="card">
+          <div class="container">
+            <div class="card__title">
+              <img class="card__chip" src="./img/chip.svg" alt="chipCard" />
+              <form class="card__form">
+                <label class="card__label" for="card-number"
+                  >Card Number
+                  <input
+                    class="card__input card__input_number"
+                    type="text"
+                    id="card-number"
+                    name="card-number"
+                    placeholder="xxxx-xxxx-xxxx-xxxx"
+                  />
+                </label>
+                <div class="card__block">
+                  <label class="card__label" for="card-name"
+                    >Cardholder name
+                    <input
+                      class="card__input card__input_name"
+                      type="text"
+                      id="card-name"
+                      name="card-name"
+                      placeholder="John Smith"
+                    />
+                  </label>
+                  <label class="card__label" for="expiry-date"
+                    >Expiry Date
+                    <input
+                      class="card__input card__input_date"
+                      type="text"
+                      id="expiry-date"
+                      name="expiry-date"
+                      placeholder="MM/YY"
+                      pattern="\d{2}/\d{2}"
+                    />
+                  </label>
+                  <label class="card__label card__label_right" for="cvv"
+                    ><p class="card__exclamation">
+                      CVV/CVC
+                      <img
+                        class="card__icon"
+                        src="./img/icon!.svg"
+                        alt="icon"
+                        id="myBtn"
+                      />
+                    </p>
+                    <input
+                      class="card__input card__input_kod"
+                      type="text"
+                      id="cvv"
+                      name="cvv"
+                      placeholder="xxx"
+                      pattern="\d{3}"
+                      maxlength="3"
+                    />
+                  </label>
+                </div>
+
+                <!-- MODAL WONDOW -->
+                <div class="card__modal" id="myModal">
+                  <div class="modal">
+                    <div class="modal-content">
+                      <p class="modal__text">
+                        3 digits on the back of your card.
+                      </p>
+                    </div>
+                    <img src="./img/modal.svg" alt="modal" />
+                  </div>
+                </div>
+                <!-- MODAL WONDOW -->
+              </form>
+              <img
+                class="card__rectangle card__rectangle_one"
+                src="./img/Rectangle.svg"
+                alt="Rectangle"
+              />
+              <img
+                class="card__rectangle card__rectangle_two"
+                src="./img/Rectangle.svg"
+                alt="Rectangle"
+              />
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="footer">
+        <div class="container">
+          <div class="footer__content">
+            <div class="footer__title">
+              <button type="button" class="footer__button">
+                Connect
+                <img
+                  class="footer__security"
+                  src="./img/security.svg"
+                  alt="security"
+                />
+              </button>
+              <div class="footer__pay">
+                <a href="#!" class="footer__link"
+                  ><img src="./img/card-1.svg" alt="Visa"
+                /></a>
+                <a href="#!" class="footer__link"
+                  ><img src="./img/card-2.svg" alt="Master"
+                /></a>
+                <a href="#!" class="footer__link"
+                  ><img src="./img/card-3.svg" alt="DSS"
+                /></a>
+              </div>
+            </div>
+            <p class="footer__text">
+              We'll charge and refund €1 to check if the card is valid.
+            </p>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
